@@ -1,13 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login/SignUp</title>
-    <link rel="stylesheet" href="">
-</head>
-<body>
-    
-</body>
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Login/SignUp</title>
+		<link rel="stylesheet" href="style.css" />
+		<link rel="stylesheet" href="./src/styles/style.css" />
+	</head>
+	<body>
+		<div class="container">
+			<main class="main">
+				<section class="content">
+					<div class="content__sign"><h1>Sign up</h1></div>
+					<div class="content__content">
+						<div class="content__titles">
+							<h2 class="content__title">New user?</h2>
+							<h3 class="content_subtitle">
+								Use the form below to create your account.
+							</h3>
+							<form class="form" action="" method="get">
+								<label for="first-name">
+									First Name
+									<input type="text" name="first-name" id="first-name" />
+								</label>
+								<label for="last-name">
+									Last Name
+									<input type="text" name="last-name" id="last-name" />
+								</label>
+								<label for="nationality">
+									Nationality
+									<select id="nationality">
+										<option selected value="american">American</option>
+										<option value="belarusian">Belarusian</option>
+										<option value="russian">Russian</option>
+									</select>
+								</label>
+								<label for="email"
+									>Email
+									<input type="email" name="email" id="email" />
+								</label>
+								<label for="birth"
+									>Date of birth
+									<input type="date" name="birth" id="birth" />
+								</label>
+								<fieldset>
+									<legend>Gender</legend>
+									<div>
+										<input type="radio" name="male" id="male" />
+										<label for="male">Male</label>
+									</div>
+									<div>
+										<input type="radio" name="female" id="female" />
+										<label for="female">Female</label>
+									</div>
+								</fieldset>
+								<label for="password">
+									Password
+									<input type="password" name="password" id="password" />
+								</label>
+								<label for="confirm-password">
+									Confirm Password
+									<input
+										type="password"
+										name="confirm-password"
+										id="confirm-password"
+									/>
+								</label>
+								<p>Have an account? <a href="#">Login</a></p>
+								<button type="submit">Complete Signup</button>
+							</form>
+						</div>
+					</div>
+				</section>
+			</main>
+		</div>
+	</body>
 </html>
