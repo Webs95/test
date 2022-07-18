@@ -5,85 +5,109 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Login/SignUp</title>
-		<link rel="stylesheet" href="style.css" />
+		<link rel="stylesheet" href="./src/styles/vendor/normalize.css" />
 		<link rel="stylesheet" href="./src/styles/style.css" />
 	</head>
 	<body>
 		<div class="container">
 			<main class="main">
+				<div class="main__bg-image">
+					<img src="./src/images/svg/Shape.svg" alt="shape" />
+				</div>
 				<section class="content">
-					<div class="block__sign"><h1>Sign up</h1></div>
+					<div class="block"><h1 class="block__sign">Sign up</h1></div>
 					<div class="content__wrapper">
-						<div class="content__titles">
-							<h2 class="content__title">New user?</h2>
-							<h3 class="content_subtitle">
-								Use the form below to create your account.
-							</h3>
-						</div>
+						<h2 class="content__title">New user?</h2>
+						<h3 class="content__subtitle">
+							Use the form below to create your account.
+						</h3>
 						<form class="form" action="" method="get">
 							<div class="row">
-								<label for="first-name">
+								<label class="form__input-name" for="first-name">
 									First Name
-									<input type="text" name="first-name" id="first-name" />
+									<input
+										class="form__input-field"
+										type="text"
+										name="first-name"
+										id="first-name"
+									/>
 								</label>
-								<label for="last-name">
+								<label class="form__input-name" for="last-name">
 									Last Name
-									<input type="text" name="last-name" id="last-name" />
+									<input
+										class="form__input-field"
+										type="text"
+										name="last-name"
+										id="last-name"
+									/>
 								</label>
 							</div>
 							<div class="row">
-								<label for="nationality">
+								<label class="form__input-name" for="nationality">
 									Nationality
-									<select id="nationality">
+									<select class="form__input-field nationality" id="nationality">
 										<option selected value="american">American</option>
 										<option value="belarusian">Belarusian</option>
 										<option value="russian">Russian</option>
 									</select>
 								</label>
-								<label for="email"
+								<label class="form__input-name" for="email"
 									>Email
-									<input type="email" name="email" id="email" />
+									<input
+										class="form__input-field"
+										type="email"
+										name="email"
+										id="email"
+									/>
 								</label>
 							</div>
 							<div class="row">
-								<label for="birth"
-									>Date of birth
-									<input type="date" name="birth" id="birth" />
+								<label class="form__input-name" for="birth"
+									>Date of Birth
+									<input
+										class="form__input-field"
+										type="date"
+										name="birth"
+										id="birth"
+									/>
 								</label>
 								<fieldset>
-									<legend>Gender</legend>
-									<div>
-										<input type="radio" name="male" id="male" />
-										<label for="male">Male</label>
-									</div>
-									<div>
-										<input type="radio" name="female" id="female" />
-										<label for="female">Female</label>
-									</div>
+									<legend class="form__input-name">Gender</legend>
+									<input class="radio" type="radio" name="male" id="male" />
+									<label for="male">Male</label>
+									<input class="radio" type="radio" name="female" id="female" />
+									<label for="female">Female</label>
 								</fieldset>
 							</div>
 							<div class="row">
-								<label for="password">
+								<label class="form__input-name" for="password">
 									Password
-									<input type="password" name="password" id="password" />
+									<input
+										class="form__input-field"
+										type="password"
+										name="password"
+										id="password"
+									/>
 								</label>
-								<label for="confirm-password">
+								<label class="form__input-name" for="confirm-password">
 									Confirm Password
 									<input
+										class="form__input-field"
 										type="password"
 										name="confirm-password"
 										id="confirm-password"
 									/>
 								</label>
 							</div>
-							<div class="row">
-								<p>Have an account? <a href="#">Login</a></p>
-								<button type="submit">Complete Signup</button>
-							</div>
 						</form>
+						<div class="row">
+							<p class="login">Have an account? <a href="#">Login</a></p>
+							<button class="btn" type="submit">Complete Signup</button>
+						</div>
 					</div>
 				</section>
 			</main>
 		</div>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 	</body>
 </html>
