@@ -1,0 +1,50 @@
+// Import fonts from google.
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans&family=Work+Sans:wght@200;300;400;500&display=swap');
+
+// Variable.
+$purple: #5a61ed;
+$white: #ffffff;
+
+// Zero margins and paddings, add box-sizing for all blocks.
+* {  
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html {
+	font-size: 10px;
+}
+
+.container {
+	max-width: 665px;
+	display: flex;
+	margin: 0 auto;
+}
+
+.block {
+  &__sign {
+    width: 137px;
+    height: 480px;
+    background-color: $purple;
+    display: flex;
+  }
+}
+
+.content {
+	display: flex;
+	&__wrapper {
+		height: 481px;
+		display: flex;
+		flex-direction: column;
+		align-items: space-between;
+		justify-content: space-between;
+	}
+}
+
+// Class for align input fields in row
+.row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
