@@ -12,14 +12,16 @@
 		<div class="container">
 			<main class="main">
 				<section class="content">
-					<div class="content__sign"><h1>Sign up</h1></div>
-					<div class="content__content">
+					<div class="block__sign"><h1>Sign up</h1></div>
+					<div class="content__wrapper">
 						<div class="content__titles">
 							<h2 class="content__title">New user?</h2>
 							<h3 class="content_subtitle">
 								Use the form below to create your account.
 							</h3>
-							<form class="form" action="" method="get">
+						</div>
+						<form class="form" action="" method="get">
+							<div class="row">
 								<label for="first-name">
 									First Name
 									<input type="text" name="first-name" id="first-name" />
@@ -28,6 +30,8 @@
 									Last Name
 									<input type="text" name="last-name" id="last-name" />
 								</label>
+							</div>
+							<div class="row">
 								<label for="nationality">
 									Nationality
 									<select id="nationality">
@@ -40,6 +44,8 @@
 									>Email
 									<input type="email" name="email" id="email" />
 								</label>
+							</div>
+							<div class="row">
 								<label for="birth"
 									>Date of birth
 									<input type="date" name="birth" id="birth" />
@@ -55,6 +61,8 @@
 										<label for="female">Female</label>
 									</div>
 								</fieldset>
+							</div>
+							<div class="row">
 								<label for="password">
 									Password
 									<input type="password" name="password" id="password" />
@@ -67,10 +75,12 @@
 										id="confirm-password"
 									/>
 								</label>
+							</div>
+							<div class="row">
 								<p>Have an account? <a href="#">Login</a></p>
 								<button type="submit">Complete Signup</button>
-							</form>
-						</div>
+							</div>
+						</form>
 					</div>
 				</section>
 			</main>
